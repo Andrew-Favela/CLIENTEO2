@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth overflow-x-hidden">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CLIENTEO | Agencia de Conversión, Digitalización Comercial & Digital Growth</title>
+<meta name="description" content="Dominamos Google Maps, automatizamos WhatsApp y profesionalizamos tu marca. Sistemas que multiplican tus clientes, en pago único y sin rentas abusivas.">
+<meta name="theme-color" content="#070F1C">
+<link rel="icon" href="./Logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{display:['Space Grotesk','sans-serif'],sans:['Inter','sans-serif']},colors:{brand:'#32A287',cobalt:'#2563EB'}}}}</script>
+<style type="text/tailwindcss">
+@layer components{
+.glass{@apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl shadow-black/50 transition-colors duration-300 hover:border-white/25}
+.btn{@apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold text-center transition duration-300 ease-[cubic-bezier(.34,1.56,.64,1)] hover:scale-105 active:scale-95}
+.btn-p{@apply btn bg-gradient-to-r from-brand to-cobalt text-white shadow-lg shadow-brand/30}
+.btn-s{@apply btn bg-white/5 border border-white/15 text-white hover:bg-white/10}
+.ttl{@apply font-display font-bold tracking-tight text-white text-[clamp(1.9rem,5vw,3.25rem)] leading-[1.1]}
+.price{@apply font-display font-bold text-3xl text-white}
+.old{@apply text-sm text-slate-500 line-through}
+.li{@apply flex gap-2 text-sm text-slate-300 leading-relaxed}
+.inp{@apply w-full rounded-2xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-slate-500 outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30}
+}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .9s cubic-bezier(.34,1.2,.64,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+select.inp option{background:#0B162C;color:#fff}
+</style>
+</head>
+<body class="bg-[#070F1C] text-slate-300 font-sans antialiased overflow-x-hidden">
+<div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
+<div class="absolute -top-40 -left-32 w-[32rem] h-[32rem] rounded-full bg-cobalt/20 blur-[120px]"></div>
+<div class="absolute top-1/2 -right-40 w-[30rem] h-[30rem] rounded-full bg-brand/15 blur-[120px]"></div>
+<div class="absolute bottom-0 left-1/4 w-[26rem] h-[26rem] rounded-full bg-[#0B162C] blur-[100px]"></div>
+</div>
+
+<header class="fixed top-0 w-full z-50 bg-slate-200/90 backdrop-blur-md border-b border-slate-300/60">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
+<a href="#inicio" aria-label="CLIENTEO inicio"><img src="./Logo.png" alt="CLIENTEO" class="h-9 md:h-12 w-auto object-contain"></a>
+<nav class="hidden lg:flex items-center gap-8" aria-label="Principal">
+<a href="#combos" class="text-slate-900 hover:text-[#1A5B9C] font-semibold">Combos</a>
+<a href="#servicios" class="text-slate-900 hover:text-[#1A5B9C] font-semibold">Servicios</a>
+<a href="#sistemas" class="text-slate-900 hover:text-[#1A5B9C] font-semibold">Sistemas</a>
+<a href="#nosotros" class="text-slate-900 hover:text-[#1A5B9C] font-semibold">Nosotros</a>
+<a href="#contacto" class="btn-p !py-2.5">Cotizar ahora</a>
+</nav>
+<button id="burger" class="lg:hidden p-2 rounded-xl text-slate-900" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu"><i data-i="menu" class="w-7 h-7 block"></i></button>
+</div>
+<nav id="mmenu" class="hidden lg:hidden bg-slate-200/95 border-t border-slate-300/60 px-4 pb-5 pt-2 flex-col gap-1" aria-label="Móvil">
+<a href="#combos" class="block py-3 text-slate-900 font-semibold">Combos</a>
+<a href="#servicios" class="block py-3 text-slate-900 font-semibold">Servicios</a>
+<a href="#sistemas" class="block py-3 text-slate-900 font-semibold">Sistemas</a>
+<a href="#nosotros" class="block py-3 text-slate-900 font-semibold">Nosotros</a>
+<a href="#contacto" class="btn-p mt-2 w-full">Cotizar ahora</a>
+</nav>
+</header>
+
+<main>
+<section id="inicio" class="pt-32 md:pt-44 pb-16 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto text-center">
+<span class="rv inline-flex items-center gap-2 rounded-full border border-brand/40 bg-brand/10 px-4 py-1.5 text-xs sm:text-sm text-brand font-semibold"><i data-i="spark" class="w-4 h-4"></i>Agencia de Conversión &amp; Optimización Comercial Local</span>
+<h1 class="rv mt-6 font-display font-bold tracking-tight text-white text-[clamp(2.2rem,7vw,5rem)] leading-[1.05]">No hacemos páginas bonitas. <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand to-cobalt">Construimos sistemas que multiplican tus clientes.</span></h1>
+<p class="rv mt-6 max-w-3xl mx-auto text-base sm:text-lg text-slate-400">Ayudamos a negocios y PYMES a dominar su zona en Google Maps, automatizar sus ventas por WhatsApp y profesionalizar su marca e infraestructura tecnológica sin rentas mensuales abusivas.</p>
+<div class="rv mt-9 flex flex-col sm:flex-row gap-3 justify-center">
+<a href="#combos" class="btn-p text-lg">Activar mi Negocio Hoy</a>
+<a href="#servicios" class="btn-s text-lg">Ver Soluciones y Precios</a>
+</div>
+<div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 text-left">
+<div class="rv glass p-4 sm:p-6 overflow-hidden"><p class="font-display font-bold text-white text-[clamp(1.35rem,4.5vw,2.25rem)] leading-none break-words">+30% a +50%</p><p class="mt-3 text-xs sm:text-sm text-slate-400">Incremento real en llamadas y rutas desde Google Maps.</p></div>
+<div class="rv glass p-4 sm:p-6 overflow-hidden"><p class="font-display font-bold text-white text-[clamp(1.35rem,4.5vw,2.25rem)] leading-none break-words">Hasta 80%</p><p class="mt-3 text-xs sm:text-sm text-slate-400">Recuperación de prospectos con WhatsApp Business automatizado.</p></div>
+<div class="rv glass p-4 sm:p-6 overflow-hidden"><p class="font-display font-bold text-white text-[clamp(1.35rem,4.5vw,2.25rem)] leading-none break-words">24 Horas</p><p class="mt-3 text-xs sm:text-sm text-slate-400">Tiempo récord de entrega en nuestro Combo de Activación Comercial.</p></div>
+<div class="rv glass p-4 sm:p-6 overflow-hidden"><p class="font-display font-bold text-white text-[clamp(1.35rem,4.5vw,2.25rem)] leading-none break-words">$0 Rentas</p><p class="mt-3 text-xs sm:text-sm text-slate-400">Desarrollo web estratégico en un solo pago sin mensualidades de hospedaje.</p></div>
+</div>
+</div>
+</section>
+
+<section id="combos" class="py-20 px-4 sm:px-6 bg-[#0B162C]/60">
+<div class="max-w-6xl mx-auto">
+<div class="rv text-center max-w-3xl mx-auto">
+<p class="text-brand font-semibold">Combo estrella · Activación Comercial Express</p>
+<h2 class="ttl mt-3">Tu negocio visible, atendido y recomendado en 24 horas</h2>
+<p class="mt-4 text-slate-400">Pago único. Sin letra chica. Compara con lo que cobra el mercado.</p>
+</div>
+<div class="mt-12 grid lg:grid-cols-2 gap-6">
+<article class="rv glass p-6 sm:p-8 flex flex-col relative">
+<span class="self-start rounded-full bg-brand/15 text-brand text-xs font-semibold px-3 py-1">El más vendido para negocios locales</span>
+<h3 class="mt-4 font-display font-bold text-2xl text-white">COMBO ESTRELLA: Activación Comercial <span class="block text-base text-slate-400 font-sans font-medium">Con Acrílico Básico</span></h3>
+<p class="old mt-4">Competencia: $3,500 – $5,000 MXN</p>
+<p class="price">$1,650 MXN <span class="text-sm font-sans font-medium text-brand">Pago único</span></p>
+<ul class="mt-5 space-y-3 flex-1">
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Optimización SEO en Google Maps:</b> creación, verificación o rescate de ficha, alta de 10 servicios/productos, descripción persuasiva con SEO local y carga de 10 a 15 fotos optimizadas.</span></li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Configuración de WhatsApp Business Pro:</b> catálogo digital de hasta 10 productos/servicios, mensaje de bienvenida, mensaje de ausencia, respuestas rápidas y sistema de etiquetas de seguimiento.</span></li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">1 Exhibidor Acrílico Doble Vista (QR + Chip NFC):</b> programado directo a la ventana de calificación de 5 estrellas de Google de tu negocio.</span></li>
+</ul>
+<button type="button" data-pkg="Combo Estrella: Maps + WhatsApp + Acrílico QR/NFC ($1,650 MXN)" class="btn-p mt-7 w-full">Solicitar Combo Estrella ($1,650)</button>
+</article>
+<article class="rv glass p-6 sm:p-8 flex flex-col relative !border-brand/50 ring-1 ring-brand/30">
+<span class="self-start rounded-full bg-gradient-to-r from-brand to-cobalt text-white text-xs font-semibold px-3 py-1">Imagen Corporativa Premium</span>
+<h3 class="mt-4 font-display font-bold text-2xl text-white">COMBO ESTRELLA PRO: Activación Comercial + Tótem de Lujo</h3>
+<p class="old mt-4">Competencia: $4,200 – $6,000 MXN</p>
+<p class="price">$2,150 MXN <span class="text-sm font-sans font-medium text-brand">Pago único</span></p>
+<ul class="mt-5 space-y-3 flex-1">
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Todo lo incluido en el Combo Estrella:</b> optimización total de Google Maps + configuración completa de WhatsApp Business Pro.</span></li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Tótem de Acrílico Rígido Personalizado de Lujo:</b> fabricado con el logotipo y colores oficiales de tu negocio, código QR impreso en alta definición y <b class="text-white">Chip NFC integrado</b> (“Acerca tu celular o escanea”).</span></li>
+</ul>
+<button type="button" data-pkg="Combo Estrella PRO con Tótem Personalizado ($2,150 MXN)" class="btn-p mt-7 w-full">Solicitar Combo PRO ($2,150)</button>
+</article>
+</div>
+<div class="rv glass mt-6 p-6 sm:p-8">
+<h3 class="font-display font-bold text-xl text-white">Exhibidores Acrílicos QR + NFC adicionales</h3>
+<p class="text-sm text-slate-400 mt-1">Para mostradores o mesas extra. Incluye diseño gráfico de plantilla y programación del chip NFC y QR hacia Google Reviews, Menú Digital, Catálogo de WhatsApp o Instagram.</p>
+<div class="mt-5 grid sm:grid-cols-2 gap-4">
+<div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-semibold text-white">Acrílico Básico QR + NFC</p><p class="mt-2 text-2xl font-display font-bold text-white">$290 MXN <span class="text-sm font-sans text-slate-400 font-medium">c/u</span></p><p class="text-sm text-slate-400">Paquete de 3 x $750 MXN</p></div>
+<div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-semibold text-white">Acrílico Personalizado QR + NFC</p><p class="mt-2 text-2xl font-display font-bold text-white">$550 MXN <span class="text-sm font-sans text-slate-400 font-medium">c/u</span></p><p class="text-sm text-slate-400">Paquete de 3 x $1,450 MXN</p></div>
+</div>
+<button type="button" data-pkg="Acrílicos Inteligentes QR + NFC Adicionales ($290 / $550 MXN)" class="btn-s mt-5 w-full sm:w-auto">Cotizar acrílicos adicionales</button>
+</div>
+</div>
+</section>
+
+<section id="servicios" class="py-20 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto">
+<div class="rv text-center max-w-3xl mx-auto">
+<p class="text-brand font-semibold">Soluciones de crecimiento digital</p>
+<h2 class="ttl mt-3">Escala tu negocio con precios claros</h2>
+</div>
+<div class="mt-12 grid lg:grid-cols-3 gap-6">
+<article class="rv glass p-6 sm:p-8 flex flex-col">
+<span class="w-12 h-12 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="web" class="w-6 h-6"></i></span>
+<h3 class="mt-4 font-display font-bold text-xl text-white">Página Web Estratégica <span class="block text-sm text-slate-400 font-sans font-medium">Landing Page de Conversión</span></h3>
+<p class="old mt-4">Competencia: $6,500 – $15,000 MXN</p>
+<p class="price">$3,400 MXN <span class="text-sm font-sans font-medium text-brand">Pago único</span></p>
+<ul class="mt-5 space-y-3 flex-1">
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Diseño moderno 100% adaptable a celular, tablet y computadora.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Animaciones fluidas, sección de servicios, galería/casos de éxito y mapa interactivo de ubicación.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Formulario inteligente dual:</b> envía los datos del prospecto a tu correo y abre tu WhatsApp en automático.</span></li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i><span><b class="text-white">Sin rentas mensuales de hospedaje</b> (alojamiento de alta velocidad incluido).</span></li>
+</ul>
+<button type="button" data-pkg="Página Web Estratégica Sin Rentas ($3,400 MXN)" class="btn-p mt-7 w-full">Quiero mi página web</button>
+</article>
+<article class="rv glass p-6 sm:p-8 flex flex-col">
+<span class="w-12 h-12 rounded-2xl bg-brand/20 text-brand grid place-items-center"><i data-i="palette" class="w-6 h-6"></i></span>
+<h3 class="mt-4 font-display font-bold text-xl text-white">Renovación o Creación Integral de Marca <span class="block text-sm text-slate-400 font-sans font-medium">Branding Express</span></h3>
+<p class="old mt-4">Competencia: $5,000 – $12,000 MXN</p>
+<p class="price">$2,400 MXN <span class="text-sm font-sans font-medium text-brand">Pago único</span></p>
+<ul class="mt-5 space-y-3 flex-1">
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Diseño o modernización de logotipo en alta resolución (PNG transparente y vector escalable).</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Definición de paleta de colores corporativa y tipografías oficiales.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Portadas y fotos de perfil optimizadas para Facebook, Instagram, Google Maps y WhatsApp.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Diseño de tarjeta de presentación (digital/física) y hoja membretada oficial para cotizaciones.</li>
+</ul>
+<button type="button" data-pkg="Renovación Integral de Marca / Branding ($2,400 MXN)" class="btn-p mt-7 w-full">Renovar mi marca</button>
+</article>
+<article class="rv glass p-6 sm:p-8 flex flex-col">
+<span class="w-12 h-12 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="ads" class="w-6 h-6"></i></span>
+<h3 class="mt-4 font-display font-bold text-xl text-white">Control y Gestión de Publicidad <span class="block text-sm text-slate-400 font-sans font-medium">Meta Ads &amp; Google Ads</span></h3>
+<p class="old mt-4">Competencia: $4,500 – $9,000 MXN / mes</p>
+<p class="price">$2,500 MXN <span class="text-sm font-sans font-medium text-brand">/ mes · 1 plataforma</span></p>
+<p class="text-sm text-slate-300 mt-1">o <b class="text-white">$3,800 MXN / mes</b> (Meta + Google Ads)</p>
+<ul class="mt-5 space-y-3 flex-1">
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Configuración profesional del Administrador de Anuncios.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Diseño de 3 a 4 anuncios persuasivos al mes (imagen y copywriting enfocado en generar mensajes directos a WhatsApp o llamadas).</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Segmentación hiper-local por colonia, zona o municipio.</li>
+<li class="li"><i data-i="check" class="w-5 h-5 shrink-0 text-brand"></i>Reporte mensual claro de mensajes y llamadas generadas.</li>
+</ul>
+<p class="mt-4 text-xs text-slate-400 italic">Nota transparente: el cliente paga su inversión de pauta directamente con su tarjeta a Meta o Google, sugiriendo desde $50 a $100 MXN diarios.</p>
+<button type="button" data-pkg="Control de Publicidad en Meta / Google Ads ($2,500 - $3,800 MXN)" class="btn-p mt-5 w-full">Gestionar mi publicidad</button>
+</article>
+</div>
+</div>
+</section>
+
+<section id="sistemas" class="py-20 px-4 sm:px-6 bg-[#0B162C]/60">
+<div class="max-w-6xl mx-auto">
+<div class="rv max-w-3xl">
+<p class="text-brand font-semibold">División de Software y Sistemas Empresariales</p>
+<h2 class="ttl mt-3">Tecnología para operar sin fricciones: Controla tu empresa desde el interior.</h2>
+<p class="mt-4 text-slate-400">Además de multiplicar tus ventas hacia afuera, implementamos software administrativo y operativo para eliminar el desorden, las libretas y las fugas de dinero.</p>
+<p class="mt-5 inline-block rounded-2xl border border-brand/40 bg-brand/10 px-4 py-2 text-sm text-white font-semibold">Diagnóstico Operativo Gratuito + Cotización a Medida según el tamaño de tu negocio.</p>
+</div>
+<div class="mt-10 grid md:grid-cols-3 gap-6">
+<article class="rv glass p-6 sm:p-8"><span class="w-12 h-12 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="cart" class="w-6 h-6"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Sistema Punto de Venta (POS) e Inventarios</h3><p class="mt-3 text-sm text-slate-300 leading-relaxed">Cobro ágil en mostrador, control exacto de entradas/salidas de mercancía, cortes de caja y lectura de código de barras.</p></article>
+<article class="rv glass p-6 sm:p-8"><span class="w-12 h-12 rounded-2xl bg-brand/20 text-brand grid place-items-center"><i data-i="receipt" class="w-6 h-6"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Sistema de Contabilidad y Facturación</h3><p class="mt-3 text-sm text-slate-300 leading-relaxed">Emisión rápida de facturas CFDI, control de gastos, cuentas por cobrar y finanzas organizadas al día sin complicaciones.</p></article>
+<article class="rv glass p-6 sm:p-8"><span class="w-12 h-12 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="building" class="w-6 h-6"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Sistema ERP Empresarial Completo</h3><p class="mt-3 text-sm text-slate-300 leading-relaxed">Plataforma integral de alto nivel que se adapta a cualquier giro de negocio para controlar múltiples sucursales, almacenes, compras, producción y operación completa.</p></article>
+</div>
+<div class="rv mt-8"><button type="button" data-pkg="Diagnóstico Gratuito de Sistemas (POS / Contabilidad / ERP)" class="btn-p w-full sm:w-auto">Agendar Diagnóstico Gratuito de Sistemas</button></div>
+</div>
+</section>
+
+<section id="nosotros" class="py-20 px-4 sm:px-6">
+<div class="max-w-6xl mx-auto">
+<div class="rv text-center max-w-3xl mx-auto"><p class="text-brand font-semibold">Por qué CLIENTEO</p><h2 class="ttl mt-3">Filosofía de resultados, probada en nuestra propia casa</h2></div>
+<div class="mt-12 grid sm:grid-cols-2 gap-6">
+<article class="rv glass p-6 sm:p-8"><span class="w-11 h-11 rounded-2xl bg-brand/20 text-brand grid place-items-center"><i data-i="trend" class="w-5 h-5"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Modelos Basados en Resultados</h3><p class="mt-2 text-sm text-slate-300 leading-relaxed">Enfoque directo en llamadas, mensajes y retorno de inversión.</p></article>
+<article class="rv glass p-6 sm:p-8"><span class="w-11 h-11 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="zap" class="w-5 h-5"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Ejecución Ágil en Horas, No Meses</h3><p class="mt-2 text-sm text-slate-300 leading-relaxed">Sin burocracia de agencias lentas.</p></article>
+<article class="rv glass p-6 sm:p-8"><span class="w-11 h-11 rounded-2xl bg-brand/20 text-brand grid place-items-center"><i data-i="chart" class="w-5 h-5"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">Enfoque 100% Analítico</h3><p class="mt-2 text-sm text-slate-300 leading-relaxed">Decisiones basadas en búsquedas reales y datos locales.</p></article>
+<article class="rv glass p-6 sm:p-8 !border-brand/40"><span class="w-11 h-11 rounded-2xl bg-cobalt/20 text-cobalt grid place-items-center"><i data-i="spark" class="w-5 h-5"></i></span><h3 class="mt-4 font-display font-bold text-xl text-white">El Poder de la Transformación</h3><p class="mt-2 text-sm text-slate-300 leading-relaxed">En CLIENTEO predicamos con el ejemplo: evolucionamos constantemente nuestras propias interfaces hacia arquitecturas limpias y de alta conversión, para demostrar cómo un cambio de imagen eleva radicalmente la autoridad de cualquier empresa.</p></article>
+</div>
+</div>
+</section>
+
+<section id="contacto" class="py-20 px-4 sm:px-6 bg-[#0B162C]/60">
+<div class="max-w-3xl mx-auto">
+<div class="rv text-center"><p class="text-brand font-semibold">Contacto</p><h2 class="ttl mt-3">Cuéntanos de tu negocio y activamos tu crecimiento</h2><p class="mt-4 text-slate-400">Te respondemos por WhatsApp y correo con una propuesta clara.</p></div>
+<form id="formulario-contacto" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST" class="rv glass mt-10 p-6 sm:p-8 space-y-5">
+<input type="hidden" name="_subject" value="Nuevo prospecto desde la landing de CLIENTEO">
+<div><label for="nombre" class="block text-sm font-semibold text-white mb-2">Nombre Completo</label><input id="nombre" name="Nombre" type="text" required autocomplete="name" placeholder="Tu nombre y apellido" class="inp" oninput="this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');"></div>
+<div><label for="telefono" class="block text-sm font-semibold text-white mb-2">Teléfono / WhatsApp</label><input id="telefono" name="Telefono" type="tel" required maxlength="10" inputmode="numeric" autocomplete="tel" placeholder="10 dígitos" class="inp" oninput="this.value = this.value.replace(/[^0-9]/g, '');"></div>
+<div><label for="correo" class="block text-sm font-semibold text-white mb-2">Correo Electrónico</label><input id="correo" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com" class="inp"></div>
+<div><label for="servicio" class="block text-sm font-semibold text-white mb-2">Servicio de Interés</label>
+<select id="servicio" name="Servicio" class="inp">
+<option>Combo Estrella: Maps + WhatsApp + Acrílico QR/NFC ($1,650 MXN)</option>
+<option>Combo Estrella PRO con Tótem Personalizado ($2,150 MXN)</option>
+<option>Acrílicos Inteligentes QR + NFC Adicionales ($290 / $550 MXN)</option>
+<option>Página Web Estratégica Sin Rentas ($3,400 MXN)</option>
+<option>Renovación Integral de Marca / Branding ($2,400 MXN)</option>
+<option>Control de Publicidad en Meta / Google Ads ($2,500 - $3,800 MXN)</option>
+<option>Diagnóstico Gratuito de Sistemas (POS / Contabilidad / ERP)</option>
+</select></div>
+<div><label for="contexto" class="block text-sm font-semibold text-white mb-2">Cuéntanos sobre ti y qué necesita tu negocio</label><textarea id="contexto" name="Contexto" rows="4" required placeholder="Giro, zona, qué quieres lograr…" class="inp"></textarea></div>
+<button type="submit" class="btn-p w-full text-lg">Enviar y abrir WhatsApp</button>
+<p class="text-xs text-slate-500 text-center">Al enviar, se abre WhatsApp con tu mensaje y tus datos llegan también a nuestro correo.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="py-10 px-4 text-center text-sm text-slate-500 border-t border-white/10">
+<p>© <span id="anio"></span> CLIENTEO · Agencia de Conversión, Digitalización Comercial &amp; Digital Growth</p>
+</footer>
+
+<a id="wa-float" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" class="fixed bottom-5 right-5 z-40 w-14 h-14 rounded-full bg-[#25D366] text-white grid place-items-center shadow-xl shadow-black/40 transition duration-300 ease-[cubic-bezier(.34,1.56,.64,1)] hover:scale-110 active:scale-95"><i data-i="wa" class="w-7 h-7"></i></a>
+
+<script>
+// ============================================================
+// CONFIGURACIÓN: reemplaza con tu número real (código de país + 10 dígitos, sin "+")
+// ============================================================
+const NUMERO_WHATSAPP = "528100000000";
+
+const ICONS = {
+menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+x:'<path d="M18 6 6 18M6 6l12 12"/>',
+check:'<path d="M20 6 9 17l-5-5"/>',
+spark:'<path d="m12 3 1.9 5.8L20 10l-6.1 1.2L12 17l-1.9-5.8L4 10l6.1-1.2z"/>',
+web:'<rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>',
+palette:'<circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1-.3-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16c3.3 0 6-2.7 6-6 0-4.9-4.5-9-10-9z"/>',
+ads:'<path d="m3 11 18-5v12L3 14v-3zM11.6 16.8a3 3 0 1 1-5.8-1.6"/>',
+cart:'<circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.6L23 7H6"/>',
+receipt:'<path d="M4 2v20l3-2 3 2 3-2 3 2 3-2 2 2V2l-2 2-3-2-3 2-3-2-3 2zM8 8h8M8 12h8"/>',
+building:'<path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 13v.01M9 17v.01"/>',
+trend:'<path d="m22 7-8.5 8.5-5-5L2 17M16 7h6v6"/>',
+zap:'<path d="M13 2 3 14h9l-1 8 10-12h-9z"/>',
+chart:'<path d="M3 3v18h18M7 16V9M12 16V5M17 16v-4"/>',
+wa:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9 10a5 5 0 0 0 5 5l1.5-1.5-2-1-1 .8a3 3 0 0 1-1.6-1.6l.8-1-1-2z"/>'
+};
+function pintarIconos(){
+document.querySelectorAll('i[data-i]').forEach(function(el){
+var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+s.setAttribute('viewBox','0 0 24 24');s.setAttribute('fill','none');s.setAttribute('stroke','currentColor');
+s.setAttribute('stroke-width','2');s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-linejoin','round');
+s.setAttribute('aria-hidden','true');s.setAttribute('class',el.getAttribute('class')||'');
+s.innerHTML=ICONS[el.dataset.i]||'';
+el.replaceWith(s);
+});
+}
+pintarIconos();
+document.getElementById('anio').textContent=new Date().getFullYear();
+document.getElementById('wa-float').href='https://wa.me/'+NUMERO_WHATSAPP+'?text='+encodeURIComponent('Hola CLIENTEO, quiero más información sobre sus servicios.');
+
+// Menú móvil: se cierra al hacer clic en cualquier enlace
+var burger=document.getElementById('burger'),mmenu=document.getElementById('mmenu');
+function menu(abrir){
+mmenu.classList.toggle('hidden',!abrir);mmenu.classList.toggle('flex',abrir);
+burger.setAttribute('aria-expanded',abrir);
+burger.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-7 h-7 block" aria-hidden="true">'+(abrir?ICONS.x:ICONS.menu)+'</svg>';
+}
+burger.addEventListener('click',function(){menu(mmenu.classList.contains('hidden'));});
+mmenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu(false);});});
+window.addEventListener('resize',function(){if(window.innerWidth>=1024)menu(false);});
+
+// Botones de paquete: scroll suave a #contacto y preselección del servicio
+document.querySelectorAll('[data-pkg]').forEach(function(b){
+b.addEventListener('click',function(){
+document.getElementById('servicio').value=b.dataset.pkg;
+document.getElementById('contacto').scrollIntoView({behavior:'smooth'});
+});
+});
+
+// Envío dual: abre WhatsApp en nueva pestaña y deja que Formspree reciba el correo
+document.getElementById('formulario-contacto').addEventListener('submit',function(){
+var g=function(id){return document.getElementById(id).value.trim();};
+var msg='*Nuevo prospecto - CLIENTEO*\n\n'+
+'*Nombre:* '+g('nombre')+'\n'+
+'*Teléfono:* '+g('telefono')+'\n'+
+'*Correo:* '+g('correo')+'\n'+
+'*Servicio:* '+g('servicio')+'\n'+
+'*Contexto:* '+g('contexto');
+window.open('https://wa.me/'+NUMERO_WHATSAPP+'?text='+encodeURIComponent(msg),'_blank');
+});
+
+// Aparición suave (fade-up) al hacer scroll
+var rv=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+rv.forEach(function(el){io.observe(el);});
+}else{rv.forEach(function(el){el.classList.add('in');});}
+</script>
+</body>
+</html>
